@@ -30,3 +30,26 @@
         @apply hover:bg-zinc-700 hover:text-zinc-50;
     } */
 }
+
+@layer components {
+
+    .navbar-option {
+        @apply hover:text-orange-brand transition-all duration-300 inline-block w-full;
+    }
+
+    .navbar-submenu-container {
+        @apply invisible absolute w-full transform opacity-0 transition-all duration-300 group-focus-within/submenu:visible group-focus-within/submenu:opacity-100 group-hover/submenu:visible group-hover/submenu:opacity-100 text-left;
+    }
+
+    .navbar-submenu-option {
+        @apply py-2 px-4 hover:bg-zinc-700 hover:text-zinc-50 inline-block w-full transition-all duration-300 text-left;
+    }
+
+    .navbar-tours-option {
+        @apply invisible absolute top-0 left-full w-full transform opacity-0 transition-all duration-300 group-focus-within/submenu:visible group-focus-within/submenu:opacity-100 group-hover/submenu:visible group-hover/submenu:opacity-100 text-left;
+    }
+
+    .network-icon {
+        @apply h-4 w-4 lg:h-5 lg:w-5 xl:h-6 xl:w-6 fill-gray-brand hover:fill-zinc-700;
+    }
+}
