@@ -25,6 +25,10 @@
     [type='radio'] {
         /* @apply h-5 w-5 rounded border-gray-300 text-rose-500 focus:ring-rose-500; */
     }
+
+    ul {
+        @apply bg-white;
+    }
 /*
     li {
         @apply hover:bg-zinc-700 hover:text-zinc-50;
