@@ -18,7 +18,7 @@
     [multiple],
     textarea,
     select {
-        /* @apply w-full bg-dark-200 dark:bg-dark-800/50 text-sm font-roundo border border-dark-300 dark:border-dark-700/50 rounded-lg text-dark-950 dark:text-dark-400 placeholder:text-dark-950 placeholder:dark:text-dark-400 focus:border-purple-500 focus:ring-1 focus:ring-purple-500; */
+        @apply w-full text-base lg:text-xl border border-zinc-700 rounded-md text-gray-brand placeholder:text-gray-brand/50 outline-none focus:border-orange-brand/50 focus:ring-1 focus:ring-orange-brand/50 p-2;
     }
 
     [type='checkbox'],
