@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body class="antialiased text-gray-brand font-raleway lg:text-base xl:text-lg 2xl:text-xl">
     <div>
@@ -36,7 +37,7 @@
     <div>
       <!-- 3 HEADER -->
       <header class="py-3 px-2 lg:py-5 lg:px-10 xl:px-14">
-        <div class="flex justify-between items-center gap-x-1">
+        <div class="relative flex justify-between items-center gap-x-1">
           <!-- 4 BRAND LOGO -->
           <div class="">
               <a href="./index.html">
@@ -212,14 +213,98 @@
             </form>
           </div>
 
-          <!-- 4 MOBILE MENU ICON -->
-          <div class="flex lg:hidden">
-            <button class="border">
+          <!-- 4 MOBILE MENU -->
+          <div x-data="{ openMain: false }" class="z-10 lg:hidden">
+            <button @click="openMain = !openMain" class="flex">
               <svg class="h-8 w-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M4 18q-.425 0-.713-.288T3 17q0-.425.288-.713T4 16h16q.425 0 .713.288T21 17q0 .425-.288.713T20 18H4Zm0-5q-.425 0-.713-.288T3 12q0-.425.288-.713T4 11h16q.425 0 .713.288T21 12q0 .425-.288.713T20 13H4Zm0-5q-.425 0-.713-.288T3 7q0-.425.288-.713T4 6h16q.425 0 .713.288T21 7q0 .425-.288.713T20 8H4Z"/>
               </svg>
 
             </button>
+            <ul x-show="openMain" class="absolute left-0 right-0 top-full flex flex-col mx-1.5 text-lg">
+              <!-- 3 MOBILE ABOUT US -->
+              <li x-data="{ openAboutUs: false }" @click.away="openAboutUs = false">
+                <button @click="openAboutUs = !openAboutUs" :class=" openAboutUs ? 'bg-gray-brand text-zinc-50' : ''" class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize">about us<span class="text-xs ml-2">▼</span></button>
+                <ul x-show="openAboutUs">
+                  <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./about_us.html">about us</a></li>
+                  <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./social_project.html">social project</a></li>
+                  <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./testimonials.html">testimonials</a></li>
+                </ul>
+              </li>
+
+              <!-- 3 MOBILE TOURS -->
+              <li x-data="{ openTours: false }" @click.away="openTours = false">
+                <button @click="openTours = !openTours" :class=" openTours ? 'bg-gray-brand text-zinc-50' : ''" class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize">tours<span class="text-xs ml-2">▼</span></button>
+                <ul x-show="openTours">
+                  <!-- 2 MOBILE CUSCO -->
+                  <li x-data="{ openCusco: false }" @click.away="openCusco = false">
+                    <button @click="openCusco = !openCusco" :class=" openCusco ? 'bg-gray-brand text-zinc-50' : ''" class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize">cusco<span class="text-xs ml-2">▼</span></button>
+                    <ul x-show="openCusco">
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">all tours</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">sacred valley</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">rainbow mountain</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">humantay lake</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">palccoyo</a></li>
+                      <li x-data="{ openMultidayTreks: false }" @click.away="openMultidayTreks = false">
+                        <button @click="openMultidayTreks = !openMultidayTreks" :class=" openMultidayTreks ? 'bg-gray-brand text-zinc-50' : ''" class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize" href="#">multiday treks<span class="text-xs ml-2">▼</span></button>
+                        <ul x-show="openMultidayTreks">
+                          <li><a class="px-12 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">inca trail</a></li>
+                          <li><a class="px-12 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">salkantay</a></li>
+                          <li><a class="px-12 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">ausangate</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- 2 MOBILE MACHU PICCHU -->
+                  <li x-data="{ openMachuPicchu : false}" @click.away="openMachuPicchu = false">
+                    <button @click="openMachuPicchu = !openMachuPicchu" :class=" openMachuPicchu? 'bg-gray-brand text-zinc-50' : ''" class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize" href="#">machu picchu<span class="text-xs ml-2">▼</span></button>
+                    <ul x-show="openMachuPicchu">
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">all tours</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">treks to machu picchu</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- 2 MOBILE LIMA & ICA -->
+                  <li x-data="{ openLima : false }" @click.away="openLima = false">
+                    <button @click="openLima = !openLima" :class=" openLima ? 'bg-gray-brand text-zinc-50' : ''" class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize" href="#">lima & ica<span class="text-xs ml-2">▼</span></button>
+                    <ul x-show="openLima">
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">all tours</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">huacachina</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">paracas</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- 2 MOBILE PUNO -->
+                  <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">puno</a></li>
+
+                  <!-- 2 MOBILE AREQUIPA -->
+                  <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">arequipa</a></li>
+
+                  <!-- 2 MOBILE AMAZONAS -->
+                  <li x-data="{ openAmazonas: false }" @click.away="openAmazonas = false">
+                    <button @click="openAmazonas = !openAmazonas" class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" :class=" openAmazonas ? 'bg-gray-brand text-zinc-50' : ''" href="#">amazonas<span class="text-xs ml-2">▼</span></button>
+                    <ul x-show="openAmazonas">
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">iquito</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">tambopata</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">manu</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- 2 MOBILE SOCIAL TOURISM -->
+                  <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">social tourism</a></li>
+
+                  <!-- 2 MOBILE PACKAGES -->
+                  <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">packages</a></li>
+                </ul>
+              </li>
+
+              <!-- 3 MOBILE BLOG -->
+              <li><a class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./blog.html">blog</a></li>
+
+              <!-- 3 MOBILE CONTACT US -->
+              <li><a class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./contact_us.html">contact us</a></li>
+            </ul>
           </div>
 
         </div>
