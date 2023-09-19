@@ -285,7 +285,7 @@
                   <li x-data="{ openAmazonas: false }" @click.away="openAmazonas = false">
                     <button @click="openAmazonas = !openAmazonas" class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" :class=" openAmazonas ? 'bg-gray-brand text-zinc-50' : ''" href="#">amazonas<span class="text-xs ml-2">▼</span></button>
                     <ul x-show="openAmazonas">
-                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">iquito</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">iquitos</a></li>
                       <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">tambopata</a></li>
                       <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">manu</a></li>
                     </ul>
@@ -312,6 +312,75 @@
 
       <!-- 3 MAIN -->
       <main>
+
+        <!-- 2 VIDEO HERO -->
+        <article class="relative">
+
+          <!-- 3 VIDEO -->
+          <video class="w-full h-96 object-cover" src="img/home/guruExplorers.mp4" type="video/mp4" autoplay muted loop></video>
+
+          <!-- 3 OVERLAY -->
+          <div class="absolute inset-0 bg-zinc-700/50"></div>
+
+          <!-- 3 TEXT & SEARCH FORM -->
+          <div class="absolute inset-0 flex flex-col justify-center items-center text-zinc-50 w-1/2 mx-auto space-y-8">
+            <h1 class="capitalize text-xl/5 lg:text-5xl font-semibold text-center">discover the best experiences for your next trip to peru!</h1>
+            <p class="capitalize">tours to machu picchu, rainbow mountain, huacachina and more</p>
+
+            <!-- 3 FORM -->
+            <form class="flex w-full text-zinc-700 rounded-xl overflow-hidden" action="">
+              <div class="flex-1 py-3 px-4 space-y-2 bg-zinc-50">
+                <label class="flex uppercase space-x-2 items-center" for="">
+                  <span>
+                    <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
+                      <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
+                      <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
+                    </svg>
+                  </span>
+                  <span class="text-sm font-semibold">destination</span>
+                </label>
+                <select class="text-zinc-700 text-base font-semibold capitalize" name="" id="">
+                  <option class="text-zinc-700 text-base capitalize" value="">select a destination</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">amazonas</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">arequipa</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">ausangate</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">cusco</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">full day treks</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">huacachina</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">lima</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">machu picchu</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">manu</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">packages</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">paracas</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">puno</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">sacred valley</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">salkantay</option>
+                  <option class="text-zinc-700 text-base capitalize" value="">tours to nazca</option>
+                </select>
+              </div>
+
+              <div class="flex-1 py-3 px-4 space-y-2 bg-zinc-50">
+                <label class="flex uppercase space-x-2 items-center" for="">
+                  <span>
+                    <svg class="h-6 w-6 stroke-current fill-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
+                    </svg>
+                  </span>
+                  <span class="text-sm font-semibold">tours</span>
+                </label>
+                <select class="text-zinc-700 text-base font-semibold capitalize" name="" id="">
+                  <option value="">all tours</option>
+                </select>
+              </div>
+
+              <div class="flex-1 ml-0.5">
+                <button class="w-full h-full bg-orange-brand text-zinc-50 hover:bg-zinc-700 font-semibold uppercase transition-all duration-300">search</button>
+              </div>
+            </form>
+
+          </div>
+
+        </article>
 
         <!-- 2 POPULAR DESTINATIONS GALERY -->
         <article class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-4 py-8 lg:py-12 lg:px-16">
