@@ -36,10 +36,10 @@
 
     <div>
       <!-- 3 HEADER -->
-      <header class="py-3 px-2 lg:py-5 lg:px-10 xl:px-14">
+      <header class="py-3 lg:py-5 lg:px-10 xl:px-14">
         <div class="relative flex justify-between items-center gap-x-1">
           <!-- 4 BRAND LOGO -->
-          <div class="">
+          <div class="pl-2 lg:pl-0">
               <a href="./index.html">
                 <!-- 4 BRAND LOGO -->
                 <svg class="w-36 md:w-48 lg:w-52 xl:w-64" viewBox="0 0 187 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -214,17 +214,17 @@
           </div>
 
           <!-- 4 MOBILE MENU -->
-          <div x-data="{ openMain: false }" class="z-10 lg:hidden">
+          <div x-data="{ openMain: false }" class="z-10 pr-2 lg:hidden">
             <button @click="openMain = !openMain" class="flex">
               <svg class="h-8 w-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M4 18q-.425 0-.713-.288T3 17q0-.425.288-.713T4 16h16q.425 0 .713.288T21 17q0 .425-.288.713T20 18H4Zm0-5q-.425 0-.713-.288T3 12q0-.425.288-.713T4 11h16q.425 0 .713.288T21 12q0 .425-.288.713T20 13H4Zm0-5q-.425 0-.713-.288T3 7q0-.425.288-.713T4 6h16q.425 0 .713.288T21 7q0 .425-.288.713T20 8H4Z"/>
               </svg>
 
             </button>
-            <ul x-show="openMain" class="absolute left-0 right-0 top-full flex flex-col mx-1.5 text-lg">
+            <ul x-show="openMain" class="absolute left-0 right-0 top-full flex flex-col px-1.5 text-lg">
               <!-- 3 MOBILE ABOUT US -->
               <li x-data="{ openAboutUs: false }" @click.away="openAboutUs = false">
-                <button @click="openAboutUs = !openAboutUs" :class=" openAboutUs ? 'bg-gray-brand text-zinc-50' : ''" class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize">about us<span class="text-xs ml-2">▼</span></button>
+                <button @click="openAboutUs = !openAboutUs" :class=" openAboutUs ? 'bg-gray-brand text-zinc-50' : ''" class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize pl-1.5">about us<span class="text-xs ml-2">▼</span></button>
                 <ul x-show="openAboutUs">
                   <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./about_us.html">about us</a></li>
                   <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./social_project.html">social project</a></li>
@@ -234,7 +234,7 @@
 
               <!-- 3 MOBILE TOURS -->
               <li x-data="{ openTours: false }" @click.away="openTours = false">
-                <button @click="openTours = !openTours" :class=" openTours ? 'bg-gray-brand text-zinc-50' : ''" class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize">tours<span class="text-xs ml-2">▼</span></button>
+                <button @click="openTours = !openTours" :class=" openTours ? 'bg-gray-brand text-zinc-50' : ''" class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize pl-1.5">tours<span class="text-xs ml-2">▼</span></button>
                 <ul x-show="openTours">
                   <!-- 2 MOBILE CUSCO -->
                   <li x-data="{ openCusco: false }" @click.away="openCusco = false">
@@ -300,10 +300,10 @@
               </li>
 
               <!-- 3 MOBILE BLOG -->
-              <li><a class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./blog.html">blog</a></li>
+              <li><a class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize pl-1.5 inline-block" href="./blog.html">blog</a></li>
 
               <!-- 3 MOBILE CONTACT US -->
-              <li><a class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./contact_us.html">contact us</a></li>
+              <li><a class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize pl-1.5 inline-block" href="./contact_us.html">contact us</a></li>
             </ul>
           </div>
 

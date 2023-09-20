@@ -36,10 +36,10 @@
 
     <div>
       <!-- 3 HEADER -->
-      <header class="py-3 px-2 lg:py-5 lg:px-10 xl:px-14">
+      <header class="py-3 lg:py-5 lg:px-10 xl:px-14">
         <div class="relative flex justify-between items-center gap-x-1">
           <!-- 4 BRAND LOGO -->
-          <div class="">
+          <div class="pl-2 lg:pl-0">
               <a href="./index.html">
                 <!-- 4 BRAND LOGO -->
                 <svg class="w-36 md:w-48 lg:w-52 xl:w-64" viewBox="0 0 187 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -214,17 +214,17 @@
           </div>
 
           <!-- 4 MOBILE MENU -->
-          <div x-data="{ openMain: false }" class="z-10 lg:hidden">
+          <div x-data="{ openMain: false }" class="z-10 pr-2 lg:hidden">
             <button @click="openMain = !openMain" class="flex">
               <svg class="h-8 w-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M4 18q-.425 0-.713-.288T3 17q0-.425.288-.713T4 16h16q.425 0 .713.288T21 17q0 .425-.288.713T20 18H4Zm0-5q-.425 0-.713-.288T3 12q0-.425.288-.713T4 11h16q.425 0 .713.288T21 12q0 .425-.288.713T20 13H4Zm0-5q-.425 0-.713-.288T3 7q0-.425.288-.713T4 6h16q.425 0 .713.288T21 7q0 .425-.288.713T20 8H4Z"/>
               </svg>
 
             </button>
-            <ul x-show="openMain" class="absolute left-0 right-0 top-full flex flex-col mx-1.5 text-lg">
+            <ul x-show="openMain" class="absolute left-0 right-0 top-full flex flex-col px-1.5 text-lg">
               <!-- 3 MOBILE ABOUT US -->
               <li x-data="{ openAboutUs: false }" @click.away="openAboutUs = false">
-                <button @click="openAboutUs = !openAboutUs" :class=" openAboutUs ? 'bg-gray-brand text-zinc-50' : ''" class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize">about us<span class="text-xs ml-2">▼</span></button>
+                <button @click="openAboutUs = !openAboutUs" :class=" openAboutUs ? 'bg-gray-brand text-zinc-50' : ''" class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize pl-1.5">about us<span class="text-xs ml-2">▼</span></button>
                 <ul x-show="openAboutUs">
                   <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./about_us.html">about us</a></li>
                   <li><a class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./social_project.html">social project</a></li>
@@ -234,7 +234,7 @@
 
               <!-- 3 MOBILE TOURS -->
               <li x-data="{ openTours: false }" @click.away="openTours = false">
-                <button @click="openTours = !openTours" :class=" openTours ? 'bg-gray-brand text-zinc-50' : ''" class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize">tours<span class="text-xs ml-2">▼</span></button>
+                <button @click="openTours = !openTours" :class=" openTours ? 'bg-gray-brand text-zinc-50' : ''" class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize pl-1.5">tours<span class="text-xs ml-2">▼</span></button>
                 <ul x-show="openTours">
                   <!-- 2 MOBILE CUSCO -->
                   <li x-data="{ openCusco: false }" @click.away="openCusco = false">
@@ -300,10 +300,10 @@
               </li>
 
               <!-- 3 MOBILE BLOG -->
-              <li><a class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./blog.html">blog</a></li>
+              <li><a class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize pl-1.5 inline-block" href="./blog.html">blog</a></li>
 
               <!-- 3 MOBILE CONTACT US -->
-              <li><a class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="./contact_us.html">contact us</a></li>
+              <li><a class="hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize pl-1.5 inline-block" href="./contact_us.html">contact us</a></li>
             </ul>
           </div>
 
@@ -313,23 +313,24 @@
       <!-- 3 MAIN -->
       <main>
 
-        <!-- 2 VIDEO HERO -->
+        <!-- 2 VIDEO & FORM HERO -->
         <article class="relative">
 
           <!-- 3 VIDEO -->
-          <video class="w-full h-96 object-cover" src="img/home/guruExplorers.mp4" type="video/mp4" autoplay muted loop></video>
+          <video class="w-full h-96 object-cover hidden lg:block" src="img/home/guruExplorers.mp4" type="video/mp4" autoplay muted loop></video>
+          <img class="h-80 lg:h-0 lg:hidden object-cover" src="img/home/under_form_hero.png" alt="Background Hero Machu Picchu">
 
           <!-- 3 OVERLAY -->
           <div class="absolute inset-0 bg-zinc-700/50"></div>
 
           <!-- 3 TEXT & SEARCH FORM -->
-          <div class="absolute inset-0 flex flex-col justify-center items-center text-zinc-50 w-1/2 mx-auto space-y-8">
-            <h1 class="capitalize text-xl/5 lg:text-5xl font-semibold text-center">discover the best experiences for your next trip to peru!</h1>
-            <p class="capitalize">tours to machu picchu, rainbow mountain, huacachina and more</p>
+          <div class="absolute inset-0 flex flex-col justify-center items-center text-zinc-50 px-6 lg:px-0 lg:w-1/2 mx-auto lg:space-y-8">
+            <h1 class="hidden lg:block capitalize text-xl/5 lg:text-5xl font-semibold text-center">discover the best experiences for your next trip to peru!</h1>
+            <p class="hidden lg:block capitalize">tours to machu picchu, rainbow mountain, huacachina and more</p>
 
             <!-- 3 FORM -->
-            <form class="flex w-full text-zinc-700 rounded-xl overflow-hidden" action="">
-              <div class="flex-1 py-3 px-4 space-y-2 bg-zinc-50">
+            <form class="flex flex-col lg:flex-row w-full text-zinc-700 rounded-xl overflow-hidden " action="">
+              <div class="flex-1 pt-3 lg:py-3 px-4 space-y-2 bg-zinc-50">
                 <label class="flex uppercase space-x-2 items-center" for="">
                   <span>
                     <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
@@ -339,7 +340,7 @@
                   </span>
                   <span class="text-sm font-semibold">destination</span>
                 </label>
-                <select class="text-zinc-700 text-base font-semibold capitalize" name="" id="">
+                <select class="text-zinc-700 text-base font-semibold capitalize bg-zinc-50" name="" id="">
                   <option class="text-zinc-700 text-base capitalize" value="">select a destination</option>
                   <option class="text-zinc-700 text-base capitalize" value="">amazonas</option>
                   <option class="text-zinc-700 text-base capitalize" value="">arequipa</option>
@@ -359,8 +360,8 @@
                 </select>
               </div>
 
-              <div class="flex-1 py-3 px-4 space-y-2 bg-zinc-50">
-                <label class="flex uppercase space-x-2 items-center" for="">
+              <div class="flex-1 pb-3 lg:py-3 px-4 space-y-2 bg-zinc-50">
+                <label class="hidden lg:flex uppercase space-x-2 items-center" for="">
                   <span>
                     <svg class="h-6 w-6 stroke-current fill-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
@@ -368,13 +369,13 @@
                   </span>
                   <span class="text-sm font-semibold">tours</span>
                 </label>
-                <select class="text-zinc-700 text-base font-semibold capitalize" name="" id="">
+                <select class="text-zinc-700 text-base font-semibold capitalize bg-zinc-50" name="" id="">
                   <option value="">all tours</option>
                 </select>
               </div>
 
-              <div class="flex-1 ml-0.5">
-                <button class="w-full h-full bg-orange-brand text-zinc-50 hover:bg-zinc-700 font-semibold uppercase transition-all duration-300">search</button>
+              <div class="lg:flex-1 lg:ml-0.5">
+                <button class="w-full h-full bg-orange-brand text-zinc-50 hover:bg-zinc-700 font-semibold uppercase transition-all duration-300 py-4 lg:py-0">search</button>
               </div>
             </form>
 
@@ -385,9 +386,16 @@
         <!-- 2 POPULAR DESTINATIONS GALERY -->
         <article class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-4 py-8 lg:py-12 lg:px-16">
 
-          <div class="lg:col-span-3 lg:flex justify-between uppercase text-xl font-semibold text-center">
-            <h5>popular destinations</h5>
-            <a href="" class="text-orange-brand underline text-base font-medium lg:font-semibold lg:text-xl">see all destinations</a>
+          <div class="lg:col-span-3 space-y-8">
+            <div class="flex flex-col justify-center items-center text-center space-y-4 lg:pb-6 lg:px-16 w-full lg:w-2/3 mx-auto">
+              <h5 class="text-xl/5 lg:text-4xl capitalize font-semibold">discover the best destinations in peru</h5>
+              <p class="">We have the best tours, equipment and staff. Avoid the crowds of tourists and customize your experience with guru explorers!</p>
+            </div>
+
+            <div class="lg:flex justify-between items-center uppercase text-xl font-semibold text-center">
+              <h5>popular destinations</h5>
+              <a href="" class="text-orange-brand underline text-base font-medium lg:font-semibold lg:text-xl">see all destinations</a>
+            </div>
 
           </div>
 
