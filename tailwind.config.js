@@ -10,6 +10,9 @@ export default {
         'orange-brand': '#FB7C45',
         'gray-brand': '#74747C',
         'gray-footer': '#343c44',
+      },
+      backgroundImage: {
+        'parallax-background': 'url("/img/home/parallax/parallax_background.jpg")',
       }
     },
   },
