@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/tailwind.css">
     <script type="module" src="./js/main.js" async></script>
-    <title>Contact Us | Guru Explorers</title>
+    <title>Cusco Tours and Excursions | Guru Explorers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     <!-- 4 WHATSAPP BUTTON -->
     <div class="fixed z-20 bottom-0 right-0 mb-4 mr-2 lg:mb-12 lg:mr-12 flex items-center flex-row-reverse gap-x-2">
-      <a class="bg-#25D366 hover:brightness-75 transition-all duration-300 w-fit rounded-full p-2 lg:p-3 peer"  href="https://web.whatsapp.com/send?phone=5113407602&text=Hi%20I%27m%20interested%20in%20the%20tours%20https%3A%2F%2Fguruexplorers.com%2Fen%2F" target="_blank">
+      <a class="bg-[#25D366] hover:brightness-75 transition-all duration-300 w-fit rounded-full p-2 lg:p-3 peer"  href="https://web.whatsapp.com/send?phone=5113407602&text=Hi%20I%27m%20interested%20in%20the%20tours%20https%3A%2F%2Fguruexplorers.com%2Fen%2F" target="_blank">
         <svg class="h-7 w-7 lg:h-10 lg:w-10 fill-zinc-50" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
       </a>
       <span class="capitalize text-sm bg-zinc-50 p-2 rounded-full shadow-xl transition-all duration-1000 peer-hover:opacity-100 opacity-0">contact us!</span>
@@ -88,7 +88,7 @@
                       <a class="py-2 px-4 hover:bg-zinc-700 hover:text-zinc-50 inline-block w-full transition-all duration-300 text-left" href="">Cusco<span class="inline-block text-sm -rotate-90 translate-x-2">▼</span></a>
                       <div class="invisible absolute top-0 left-full w-full transform opacity-0 transition-all duration-300 group-focus-within/cusco:visible group-focus-within/cusco:opacity-100 group-hover/cusco:visible group-hover/cusco:opacity-100 text-left">
                         <ul>
-                          <li><a href="cusco_all_tours.html" class="py-2 px-4 hover:bg-zinc-700 hover:text-zinc-50 inline-block w-full transition-all duration-300 text-left">All Tours</a></li>
+                          <li><a href="" class="py-2 px-4 hover:bg-zinc-700 hover:text-zinc-50 inline-block w-full transition-all duration-300 text-left">All Tours</a></li>
                           <li><a href="" class="py-2 px-4 hover:bg-zinc-700 hover:text-zinc-50 inline-block w-full transition-all duration-300 text-left">Sacred Valley</a></li>
                           <li><a href="" class="py-2 px-4 hover:bg-zinc-700 hover:text-zinc-50 inline-block w-full transition-all duration-300 text-left">Rainbow Mountain</a></li>
                           <li><a href="" class="py-2 px-4 hover:bg-zinc-700 hover:text-zinc-50 inline-block w-full transition-all duration-300 text-left">Humantay Lake</a></li>
@@ -239,7 +239,7 @@
                   <li x-data="{ openCusco: false }" @click.away="openCusco = false">
                     <button @click="openCusco = !openCusco" :class=" openCusco ? 'bg-gray-brand text-zinc-50' : ''" class="px-4 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize">cusco<span class="text-xs ml-2">▼</span></button>
                     <ul x-show="openCusco">
-                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="cusco_all_tours.html">all tours</a></li>
+                      <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">all tours</a></li>
                       <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">sacred valley</a></li>
                       <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">rainbow mountain</a></li>
                       <li><a class="px-8 hover:bg-gray-brand hover:text-zinc-50 w-full text-left py-2 capitalize inline-block" href="#">humantay lake</a></li>
@@ -313,94 +313,487 @@
       <main>
 
         <!-- 2 HERO -->
-        <section class="relative bg-[url('/img/contactUs/hero.jpg')] bg-center h-40 2xl:h-96 bg-cover">
-          <div class="flex flex-col justify-center items-center h-full w-full bg-black/50 text-zinc-50 capitalize text-center">
-            <h4 class="font-extrabold text-2xl  2xl:text-7xl">contact us</h4>
-            <span class="text-base 2xl:text-2xl font-normal">we will help you to create your next adveture</span>
-          </div>
+        <section class="relative bg-[url('/img/tours/cusco_all/hero.jpg')] bg-center h-96 lg:h-40 2xl:h-96 bg-cover">
+            <div class="flex flex-col justify-center items-center h-full w-full bg-black/50 text-zinc-50 capitalize text-center gap-y-4">
+                <svg class="h-12 w-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
+                    <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
+                    <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
+                </svg>
+              <h4 class="font-extrabold text-2xl  2xl:text-7xl">tours in cusco</h4>
+              <span class="text-base/5 2xl:text-2xl font-normal lg:w-1/2 px-4 lg:px-0">don't know where to start? here you will find all the tours in cusco! city tour, sacred valley, the rainbow mountain and more!</span>
+            </div>
         </section>
 
-        <!-- 2 CONTACT FORM & LOCATION -->
-        <article class="grid grid-cols-1 lg:grid-cols-6 p-4 py-8 lg:px-8 lg:py-12 lg:max-w-5xl lg:mx-auto lg:gap-x-12 gap-y-8 lg:gap-y-0">
-          <section class="col-span-4 space-y-8">
+        <!-- 2 MOST POPULAR GROUP TOURS -->
+        <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4 py-8 lg:py-12 lg:px-16">
 
-            <h6 class="text-xl/5 lg:text-3xl/7 font-semibold capitalize text-center lg:text-left">leave us your information</h6>
-            <!-- <hr class="bg-zinc-700 h-0.5 w-1/12 my-2"> -->
-            <p class="text-base lg:text-xl">If you are looking for your next experience, want to plan a corporate trip or want to customize a group trip, contact us and you will be in the best hands.</p>
-            <form action="" class="space-y-4">
-              <div>
-                <input type="text" name="" id="" placeholder="Name">
-                <!-- <label for="">Name</label> -->
-              </div>
-              <div>
-                <input type="email" name="" id="" placeholder="E-mail">
-                <!-- <label for="">Email</label> -->
-              </div>
-              <div>
-                <input type="text" name="" id="" placeholder="Subject">
-                <!-- <label for="">Subject</label> -->
-              </div>
-              <div><textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea></div>
-              <button class="bg-orange-brand hover:bg-zinc-700 text-zinc-50 rounded-md py-2.5 px-5 transition-all duration-300 w-full lg:w-fit">Send</button>
-            </form>
+          <section class="md:col-span-2 lg:col-span-3 xl:col-span-4 space-y-8">
+            <div class="flex flex-col justify-center items-center text-center space-y-4 w-full lg:pb-6 lg:px-16 xl:px-0 xl:w-4/5 mx-auto">
+                <p class="text-lg/5 text-orange-brand capitalize font-semibold">cusco tours alternatives with guru explorers</p>
+                <h5 class="text-xl/5 lg:text-4xl font-semibold uppercase">original and innovative options to visit cusco!</h5>
+                <p class="text-base/5">One of the most historic destinations in Peru. Cusco is witness of the Inca Empire, being the seat of its capital. For this reason, it is known for having incredible archaeological remains of this culture that are mixed with the breathtaking views of the Peruvian Andes. Tours from Cusco are the most chosen for lovers of history, adventure and nature. In addition, here you will find a whole range of options that will satisfy all kinds of tourists.</p>
+                <p class="text-base/5">Excursions from Cusco are highly recommended since it has one of the 7 wonders of the world. Machu Picchu has become an obligatory stop for all people traveling to Peru for the first time. Cusco has a variety of activities for all tastes: for those who like adventure as well as for those who enjoy the contemplation of landscapes. Tours from Cusco to the Sacred Valley, the Rainbow Mountain and train tours to Machu Picchu are clear representatives of what you can find in this destination.</p>
+            </div>
+
+            <div class="lg:flex justify-start items-center uppercase text-xl/5 lg:text-4xl font-semibold text-center lg:text-left">
+              <h5>the most popular group tours in cusco</h5>
+            </div>
+
           </section>
 
-          <aside class="col-span-2 space-y-8 text-center lg:text-left">
+          <!-- 3 MOST POPULAR GROUP TOURS GALLERY -->
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/most_popular1.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
 
-            <h6 class="text-xl/5 lg:text-3xl/7 font-semibold capitalize">location</h6>
-            <!-- <hr class="bg-zinc-700 h-0.5 w-1/12 my-2"> -->
-            <div class="flex flex-col items-center lg:block text-base lg:text-xl space-y-4">
-              <p>Servicios Turísticos Gurú E.I.R.L.</p>
-              <p>Ruc: 20607748692</p>
-              <p>Calle Maruri 265. Oficina 329.</p>
-              <p>Cusco 08002</p>
-              <p>View address on <a class="text-orange-brand" href="https://www.google.com/maps/place/Tours+Cusco+%7C+Guru+Explorers/@-13.5186131,-71.9789912,17z/data=!3m1!4b1!4m6!3m5!1s0x916dd7cad7b890a5:0xb46e4689c83d14db!8m2!3d-13.5186131!4d-71.9764163!16s%2Fg%2F11v41f9j7w?entry=tts&shorturl=1" target="_blank">Google Maps</a></p>
-              <!-- 3 PHONE NUMBER -->
-              <a class="flex items-center gap-x-2" href="tel:+51966317650">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><title>Phone Number</title>
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                </svg>
-                <span>+51 966 317 650</span>
-              </a>
-              <!-- 3 EMAIL -->
-              <a class="flex items-center gap-x-2" href="mailto:info@guruexplorers.com">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><title>E-Mail</title>
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                </svg>
-                <span>info@guruexplorers.com</span>
-              </a>
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">atvs maras moray - group service</h6>
+                    <span class="capitalize">from:</span>
 
-              <!-- 3 SOCIAL MEDIA -->
-              <div class="flex gap-x-4">
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">35</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$49</span></p>
+                      </div>
 
-                <!-- 4 FACEBOOK -->
-                <a href="https://www.facebook.com/guruexplorers/" target="_blank">
-                  <svg class="h-7 w-7 fill-current hover:fill-zinc-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                </a>
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
 
-                <!-- 4 INSTAGRAM -->
-                <a href="https://www.instagram.com/guruexplorers/" target="_blank">
-                  <svg class="h-7 w-7 fill-current hover:fill-zinc-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
-                </a>
+                    </div>
 
-                <!-- 4 YOUTUBE -->
-                <a href="https://www.youtube.com/channel/UCQgINmuGFfgHFIhrCx1lr4Q" target="_blank">
-                  <svg class="h-7 w-7 fill-current hover:fill-zinc-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                </a>
-
-                <!-- 4 TRIPADVISOR -->
-                <a href="https://www.tripadvisor.com.pe/Attraction_Review-g294314-d22826444-Reviews-Guru_Explorers-Cusco_Cusco_Region.html" target="_blank">
-                  <svg class="h-7 w-7 fill-current hover:fill-zinc-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Tripadvisor</title><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg>
-                </a>
-
+                  </div>
               </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/most_popular2.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">cusco city tour - group service</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">15</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$25</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/most_popular3.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">humantay lake tour</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">39</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$59</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/most_popular4.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">palccoyo rainbow mountains tour</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">75</span>/person</p>
+                        <!-- <p class="capitalize">before: <span class="lining-nums uppercase">us$59</span></p> -->
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/most_popular5.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">rainbow mountain (vinicunca and red valley tour)</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">39</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$59</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/most_popular6.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">sacred valley of the incas tour + maras moray - group service</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">45</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$55</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/most_popular7.jpeg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">maras moray tour - group service</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">20</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$35</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <div class="flex aspect-[3/4] lg:aspect-auto xl:aspect-[4/3] rounded-xl border border-zinc-700 lg:col-span-2 xl:col-span-1 xl:row-start-2 xl:col-start-4">
+            <div class="flex flex-col justify-center items-center text-center p-8 gap-y-4">
+              <svg class="h-14 w-14 fill-none" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 55 51"><g clip-path="url(#clip0_1850_2740)"><path d="M9.29554 46.7087C9.43428 45.9004 9.63248 44.611 9.8505 43.3023C10.0883 41.9551 10.3064 40.608 10.564 39.2608C10.8811 37.5095 11.2181 35.7581 11.5748 34.0068C11.7334 33.2755 11.6739 32.6981 11.0595 32.14C7.92798 29.2532 4.83609 26.3087 1.70455 23.4027C0.614464 22.3827 -0.277428 21.2857 0.0595094 19.7076C0.396446 18.2064 0.931581 17.4366 2.49735 17.0902C4.26131 16.7053 6.08473 16.5321 7.88834 16.2434C9.96942 15.9163 12.0505 15.5891 14.1118 15.2619C15.0631 15.108 16.0145 14.954 16.9856 14.8578C17.5604 14.8 17.8775 14.5498 18.1154 14.0687C19.1856 11.9325 20.2559 9.8155 21.346 7.69852C22.4163 5.60079 23.4469 3.50305 24.5766 1.44381C25.0523 0.57777 25.8649 0.0966379 26.9748 0.000411485C28.7982 -0.153551 29.9676 0.500789 30.7604 2.0789C32.7226 6.00494 34.8235 9.85399 36.7262 13.7993C37.3009 14.9925 38.3712 14.8963 39.2631 15.0887C40.6109 15.3966 42.0181 15.3966 43.3856 15.5891C45.4667 15.8778 47.5478 16.2242 49.6091 16.5514C50.5604 16.7053 51.5118 16.8978 52.4829 17.0132C54.5045 17.2827 55.8721 20.4966 54.3262 22.0747C52.6415 23.8068 50.8775 25.4812 49.1334 27.1555C47.4091 28.8106 45.6649 30.4657 43.9009 32.0823C43.0091 32.9098 43.4451 33.9106 43.5442 34.8151C43.6433 35.7966 43.9604 36.7589 44.1388 37.7212C44.4757 39.5687 44.7532 41.4355 45.0505 43.3023C45.2883 44.8227 45.546 46.3238 45.7442 47.8442C46.0018 49.8072 43.128 51.7702 40.928 50.6925C38.173 49.3453 35.4577 47.9596 32.7226 46.574C31.3352 45.8812 29.9082 45.2268 28.5802 44.4378C27.5892 43.8604 26.8361 44.1876 25.9838 44.6302C22.1388 46.5932 18.3334 48.614 14.4289 50.4808C11.5946 51.8664 9.19645 50.2883 9.29554 46.7087ZM42.3352 48.1329C42.5136 47.8634 42.791 47.671 42.791 47.4593C42.791 46.8627 42.7118 46.2661 42.5928 45.6695C42.2757 43.9374 41.8991 42.2246 41.582 40.4925C41.2055 38.4717 40.9082 36.451 40.5118 34.4302C40.1748 32.7174 40.4721 31.2932 41.8793 30.0423C44.5946 27.6174 47.191 25.0963 49.8469 22.6136C50.4811 22.017 51.1154 21.4204 51.6901 20.7853C51.8487 20.6121 51.9874 20.2657 51.9478 20.054C51.9082 19.8808 51.5712 19.7076 51.3334 19.6691C49.2919 19.3612 47.2703 19.111 45.2289 18.8223C44.1784 18.6876 43.128 18.5336 42.0973 18.3797C40.71 18.168 39.3424 17.8985 37.9352 17.7638C36.3892 17.6291 35.2 17.0517 34.4865 15.6661C32.4649 11.7015 30.4433 7.73701 28.382 3.77249C28.1838 3.38758 27.8073 3.0989 27.51 2.77173C27.2523 3.07966 26.9748 3.36834 26.7172 3.69551C26.5784 3.86871 26.4595 4.08041 26.3604 4.27286C24.537 7.89098 22.7334 11.5283 20.91 15.1464C20.2361 16.4936 19.2847 17.4944 17.6793 17.7253C16.0541 17.9563 14.4487 18.1872 12.8235 18.4181C10.0289 18.8223 7.23428 19.2072 4.45951 19.6306C4.00365 19.7076 3.3496 19.7846 3.17122 20.0732C2.83428 20.6698 3.60726 20.9585 3.90455 21.3627C3.96401 21.4397 4.02347 21.4781 4.10275 21.5359C7.29374 24.5381 10.4847 27.5404 13.6757 30.5427C14.4487 31.274 14.8847 32.1593 14.746 33.2178C14.6073 34.2378 14.3892 35.2385 14.2109 36.2393C14.0919 36.9129 13.973 37.5864 13.8541 38.26C13.5172 40.0691 13.1604 41.8781 12.8433 43.6872C12.6451 44.7457 12.4667 45.8234 12.3082 46.8819C12.2685 47.1898 12.328 47.517 12.328 47.8249C12.7244 47.8057 13.2 47.9212 13.4973 47.7672C17.4613 45.7464 21.4253 43.6872 25.3694 41.628C26.4397 41.0698 27.6487 40.7427 28.7586 41.2815C32.5442 43.1098 36.2703 45.0729 40.0163 46.9781C40.71 47.3823 41.4235 47.7095 42.3352 48.1329Z" fill="#515251"></path><path d="M29.3334 12.1826H25.7659V18.726H29.3334V12.1826Z" fill="#99DEDB"></path><path d="M23.841 36.1707L20.9673 34.1182L16.9746 39.3889L19.8483 41.4414L23.841 36.1707Z" fill="#99DEDB"></path><path d="M12.6458 22.1805L11.7524 25.5342L18.2762 27.1726L19.1695 23.819L12.6458 22.1805Z" fill="#99DEDB"></path><path d="M35.3487 41.4275L38.2224 39.375L34.2297 34.1043L31.356 36.1568L35.3487 41.4275Z" fill="#99DEDB"></path><path d="M36.0505 23.8182L36.9438 27.1719L43.4676 25.5334L42.5743 22.1798L36.0505 23.8182Z" fill="#99DEDB"></path><path d="M33.4954 27.4822V24.4029H29.135V21.4199H25.9639V24.4029H21.6035V27.4822H25.5477L25.5675 27.5207L22.6341 31.389L25.1909 33.2173L27.5495 30.1188L29.8882 33.2173L32.445 31.389L29.5116 27.5207L29.5314 27.4822H33.4954Z" fill="#FF5231"></path></g><defs><clipPath id="clip0_1850_2740"><rect width="55" height="51" fill="white"></rect></clipPath></defs></svg>
+              <h6 class="text-orange-brand capitalize font-semibold">would you like to customize your trip?</h6>
+              <span class="text-base">Choose the tours that you like the most and contact our agents so we can help you create the best itinerary. We provide free tourist information. What are you waiting for?</span>
 
             </div>
 
-          </aside>
-
+          </div>
 
         </article>
+
+        <!-- 2 BEST PRIVATE TOURS -->
+        <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 px-4 py-8 lg:py-12 lg:px-16">
+
+          <section class="md:col-span-2 lg:col-span-2 xl:col-span-3 space-y-8">
+            <!-- <div class="flex flex-col justify-center items-center text-center space-y-4 lg:pb-6 lg:px-16 w-full xl:w-2/3 mx-auto hidden">
+                <p class="text-lg/5 text-orange-brand capitalize font-semibold">cusco tours alternatives with guru explorers</p>
+                <h5 class="text-xl/5 lg:text-4xl font-semibold uppercase">original and innovative options to visit cusco!</h5>
+                <p class="text-base/5">One of the most historic destinations in Peru. Cusco is witness of the Inca Empire, being the seat of its capital. For this reason, it is known for having incredible archaeological remains of this culture that are mixed with the breathtaking views of the Peruvian Andes. Tours from Cusco are the most chosen for lovers of history, adventure and nature. In addition, here you will find a whole range of options that will satisfy all kinds of tourists.</p>
+                <p class="text-base/5">Excursions from Cusco are highly recommended since it has one of the 7 wonders of the world. Machu Picchu has become an obligatory stop for all people traveling to Peru for the first time. Cusco has a variety of activities for all tastes: for those who like adventure as well as for those who enjoy the contemplation of landscapes. Tours from Cusco to the Sacred Valley, the Rainbow Mountain and train tours to Machu Picchu are clear representatives of what you can find in this destination.</p>
+            </div> -->
+
+            <div class="lg:flex justify-between items-center uppercase text-xl/5 lg:text-4xl font-semibold text-center lg:text-left">
+              <h5>the best private tours to the sacred valley from cusco</h5>
+            </div>
+
+          </section>
+
+          <!-- 3 MOST POPULAR GROUP TOURS GALLERY -->
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/the_best_private1.jpeg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">picnic with llamas + chinchero, moray & salt mines of maras</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">89</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$129</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/the_best_private2.jpeg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">sacred valley of the incas tour</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">54</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$65</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/the_best_private3.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">maras moray tour</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">45</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$49</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/the_best_private4.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">tour to machu picchu by train + maras moray 2d / 1n</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">314</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$399</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <div class="flex aspect-[3/4] md:aspect-auto rounded-xl border border-zinc-700 md:col-span-2 xl:col-span-1 xl:row-start-2 xl:col-start-3 xl:row-span-2">
+            <div class="flex flex-col justify-center items-center text-center p-8 gap-y-4">
+              <svg class="h-14 w-14 fill-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 85"><path d="M22.9786 0C20.743 9.05528 12.6213 15.804 2.91477 15.804C2.77328 15.804 2.66008 15.804 2.51859 15.804C2.15071 17.3702 1.92432 19.0503 1.92432 20.7873C1.92432 32.263 11.178 41.5745 22.5824 41.5745C33.9868 41.5745 43.2405 32.263 43.2405 20.7873C43.2405 9.42546 34.2132 0.19933 22.9786 0Z" fill="#FF5231"></path><path d="M33.1944 62.5039H13.6682V68.7685H33.1944V62.5039Z" fill="#99DEDB"></path><path d="M62.9082 46.8428H43.3821V52.2531H62.9082V46.8428Z" fill="#99DEDB"></path><path d="M85.6603 81.7253L55.1259 33.0318C54.7298 32.4053 54.0506 32.0352 53.3431 32.0352C52.6356 32.0352 51.9282 32.4053 51.5603 33.0318L33.1095 62.4472L24.5632 48.8358C24.1671 48.2094 23.4879 47.8392 22.7804 47.8392C22.073 47.8392 21.3655 48.2094 20.9976 48.8358L0.339487 81.7253C-0.0849946 82.3802 -0.0849946 83.206 0.28289 83.8894C0.650774 84.5728 1.35824 85 2.15061 85H22.8087H43.4102H83.9058C84.6699 85 85.3773 84.5728 85.7735 83.8894C86.0848 83.206 86.0848 82.3802 85.6603 81.7253ZM22.7521 53.9615L31.2984 67.5728L39.5333 80.7286H22.7804H5.97095L22.7521 53.9615ZM44.5422 80.7286L35.5715 66.4338L53.3148 38.1574L80.0006 80.7001H44.5422V80.7286Z" fill="#515251"></path></svg>
+              <h6 class="text-orange-brand capitalize font-semibold">why choosing a private tour?</h6>
+              <span class="text-base">To customize your tours to Cusco book the private tours, get the best photos, enjoy the tour at your own pace and avoid the masses of tourists! We help you make the best itinerary based on your preferences. Contact us for more information!!</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- 2 BEST PRIVATE TOURS -->
+        <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 px-4 py-8 lg:py-12 lg:px-16">
+
+          <section class="md:col-span-2 lg:col-span-2 xl:col-span-4 space-y-8">
+            <!-- <div class="flex flex-col justify-center items-center text-center space-y-4 lg:pb-6 lg:px-16 w-full xl:w-2/3 mx-auto hidden">
+                <p class="text-lg/5 text-orange-brand capitalize font-semibold">cusco tours alternatives with guru explorers</p>
+                <h5 class="text-xl/5 lg:text-4xl font-semibold uppercase">original and innovative options to visit cusco!</h5>
+                <p class="text-base/5">One of the most historic destinations in Peru. Cusco is witness of the Inca Empire, being the seat of its capital. For this reason, it is known for having incredible archaeological remains of this culture that are mixed with the breathtaking views of the Peruvian Andes. Tours from Cusco are the most chosen for lovers of history, adventure and nature. In addition, here you will find a whole range of options that will satisfy all kinds of tourists.</p>
+                <p class="text-base/5">Excursions from Cusco are highly recommended since it has one of the 7 wonders of the world. Machu Picchu has become an obligatory stop for all people traveling to Peru for the first time. Cusco has a variety of activities for all tastes: for those who like adventure as well as for those who enjoy the contemplation of landscapes. Tours from Cusco to the Sacred Valley, the Rainbow Mountain and train tours to Machu Picchu are clear representatives of what you can find in this destination.</p>
+            </div> -->
+
+            <div class="lg:flex justify-between items-center uppercase text-xl/5 lg:text-4xl font-semibold text-center lg:text-left">
+              <h5>cusco hikes</h5>
+            </div>
+
+          </section>
+
+          <!-- 3 MOST POPULAR GROUP TOURS GALLERY -->
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes1.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">palccoyo mountains tour - alternative to the traditional rainbow mountain (vinicunca)</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">79</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$109</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes2.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">full day tour waqrapukara</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">45</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$62</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes3.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">full day tour humantay lake</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">79</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$109</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+          <a href="#" class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes4.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
+            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-zinc-900/40 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+
+            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+              <div class="flex h-full flex-col justify-between">
+                <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
+                  <div class="flex flex-col text-xs text-left">
+                    <h6 class="uppercase font-semibold pb-3">full day tour to the "7 lakes of ausangate"</h6>
+                    <span class="capitalize">from:</span>
+
+                    <div class="flex justify-between items-center">
+                      <div class="">
+                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">89</span>/person</p>
+                        <p class="capitalize">before: <span class="lining-nums uppercase">us$99</span></p>
+                      </div>
+
+                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
+
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+
+          </a>
+
+        </article>
+
 
       </main>
 
