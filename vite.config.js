@@ -19,7 +19,8 @@ export default defineConfig({
         contactUs: resolve(root, 'contact_us.html'),
         aboutUs: resolve(root, 'about_us.html'),
         socialProject: resolve(root, 'social_project.html'),
-        testimonials: resolve(root, 'testimonials.html')
+        testimonials: resolve(root, 'testimonials.html'),
+        cusco_all_tours: resolve(root, 'cusco_all_tours.html'),
       }
     }
   }
