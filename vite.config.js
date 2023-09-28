@@ -21,6 +21,8 @@ export default defineConfig({
         socialProject: resolve(root, 'social_project.html'),
         testimonials: resolve(root, 'testimonials.html'),
         cusco_all_tours: resolve(root, 'cusco_all_tours.html'),
+        destinations: resolve(root, 'destinations.html'),
+        '2': resolve(root, '2.html'),
       }
     }
   }
