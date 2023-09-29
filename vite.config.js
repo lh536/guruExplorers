@@ -23,6 +23,11 @@ export default defineConfig({
         cusco_all_tours: resolve(root, 'cusco_all_tours.html'),
         destinations: resolve(root, 'destinations.html'),
         '2': resolve(root, '2.html'),
+        tour_detail: resolve(root, 'tour_detail.html'),
+        terms_and_conditions: resolve(root, 'terms_and_conditions.html'),
+        privacy_policy: resolve(root, 'privacy_policy.html'),
+        cookies_policy: resolve(root, 'cookies_policy.html'),
+        covid_19_travel_protocol: resolve(root, 'covid_19_travel_protocol.html'),
       }
     }
   }
