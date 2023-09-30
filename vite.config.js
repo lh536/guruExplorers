@@ -28,6 +28,7 @@ export default defineConfig({
         privacy_policy: resolve(root, 'privacy_policy.html'),
         cookies_policy: resolve(root, 'cookies_policy.html'),
         covid_19_travel_protocol: resolve(root, 'covid_19_travel_protocol.html'),
+        blog_post: resolve(root, 'blog_post.html'),
       }
     }
   }
