@@ -29,6 +29,8 @@ export default defineConfig({
         cookies_policy: resolve(root, 'cookies_policy.html'),
         covid_19_travel_protocol: resolve(root, 'covid_19_travel_protocol.html'),
         blog_post: resolve(root, 'blog_post.html'),
+        esnna: resolve(root, 'esnna.html'),
+        claims_book: resolve(root, 'claims_book.html'),
       }
     }
   }
