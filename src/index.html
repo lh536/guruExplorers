@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="./js/glide.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/glide.core.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/glide.theme.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body class="antialiased text-gray-brand font-raleway lg:text-base xl:text-lg 2xl:text-xl">
@@ -562,7 +565,7 @@
 
           </div>
 
-          <section class="grid grid-cols-none grid-flow-col auto-cols-[90%] md:col-span-2 md:auto-cols-[45%] lg:col-span-4 lg:auto-cols-[32%] xl:auto-cols-[24%] overflow-x-auto snap-x snap-mandatory relative">
+          <section class="md:col-span-2 lg:col-span-4 glide">
 
             <!-- <div class="absolute z-10 top-2/4 -translate-y-7 flex h-14 w-14">
               <a href="" class="bg-orange-brand flex items-center justify-center text-zinc-50 w-full">
@@ -582,260 +585,271 @@
 
             </div> -->
 
-            <!-- 3 1 CUSCO CARD -->
-            <div class="relative snap-end md:snap-end overflow-hidden bg-[url('/img/home/scroll_gallery/1_scroll_cusco.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay mx-4 lg:mx-0">
-              <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-              <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-              <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
-                <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
+            <div class="glide__track" data-glide-el="track">
+              <div class="glide__slides">
 
-                <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
-                  <div class="flex justify-between items-center">
-                    <div class="flex flex-col items-start">
-                      <del class="text-xs">$399 USD</del>
-                      <span>$314 USD</span>
+                <!-- 3 1 CUSCO CARD -->
+                <div class="relative overflow-hidden bg-[url('/img/home/scroll_gallery/1_scroll_cusco.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay lg:mx-0">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
+                    <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
+
+                    <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
+                      <div class="flex justify-between items-center">
+                        <div class="flex flex-col items-start">
+                          <del class="text-xs">$399 USD</del>
+                          <span>$314 USD</span>
+                        </div>
+                        <span>2 days</span>
+                      </div>
+
+                      <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
+                        <span>
+                          <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
+                            <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
+                            <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
+                          </svg>
+                        </span>
+                        <span class="text-left uppercase font-semibold whitespace-normal">tour to machu picchu by train + maras moray 2d / 1n</span>
+                      </div>
+
+                      <span class="text-xs text-left whitespace-normal">The post requested of Cusco in 2 days. Visit Maras Moray on your way to Machu Picchu</span>
+
                     </div>
-                    <span>2 days</span>
                   </div>
+                </div>
 
-                  <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
-                    <span>
-                      <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
-                        <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
-                        <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
-                      </svg>
-                    </span>
-                    <span class="text-left uppercase font-semibold">tour to machu picchu by train + maras moray 2d / 1n</span>
+                <!-- 3 2 CUSCO CARD -->
+                <div class="relative overflow-hidden bg-[url('/img/home/scroll_gallery/2_scroll_cusco.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay lg:mx-0">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
+                    <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
+
+                    <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
+                      <div class="flex justify-between items-center">
+                        <div class="flex flex-col items-start">
+                          <del class="text-xs">$339 USD</del>
+                          <span>$269 USD</span>
+                        </div>
+                        <span>1 days</span>
+                      </div>
+
+                      <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
+                        <span>
+                          <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
+                            <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
+                            <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
+                          </svg>
+                        </span>
+                        <span class="text-left uppercase font-semibold whitespace-normal">tour to machu picchu by train full day - group service</span>
+                      </div>
+
+                      <span class="text-xs text-left whitespace-normal">Unmissable destination to one of the 7 wonders of the world in shared service!</span>
+
+                    </div>
                   </div>
+                </div>
 
-                  <span class="text-xs text-left">The post requested of Cusco in 2 days. Visit Maras Moray on your way to Machu Picchu</span>
+                <!-- 3 3 HUACACHINA CARD -->
+                <div class="relative overflow-hidden bg-[url('/img/home/scroll_gallery/3_scroll_huacachina.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay lg:mx-0">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
+                    <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">huacachina</span>
 
+                    <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
+                      <div class="flex justify-between items-center">
+                        <div class="flex flex-col items-start">
+                          <del class="text-xs">$139 USD</del>
+                          <span>$119 USD</span>
+                        </div>
+                        <span>1 days</span>
+                      </div>
+
+                      <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
+                        <span>
+                          <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
+                            <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
+                            <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
+                          </svg>
+                        </span>
+                        <span class="text-left uppercase font-semibold whitespace-normal">tour to huacachina & paracas full day</span>
+                      </div>
+
+                      <span class="text-xs text-left whitespace-normal">One of the best and most complete excursions to Huacachina & Paracas, where walking, tasting, adventure and nature are included.</span>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3 4 CUSCO CARD -->
+                <div class="relative overflow-hidden bg-[url('/img/home/scroll_gallery/4_scroll_cusco.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay lg:mx-0">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
+                    <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
+
+                    <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
+                      <div class="flex justify-between items-center">
+                        <div class="flex flex-col items-start">
+                          <del class="text-xs">$59 USD</del>
+                          <span>$35 USD</span>
+                        </div>
+                        <span>1 days</span>
+                      </div>
+
+                      <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
+                        <span>
+                          <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
+                            <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
+                            <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
+                          </svg>
+                        </span>
+                        <span class="text-left uppercase font-semibold whitespace-normal">rainbow mountain (vinicunca) and red valley tour</span>
+                      </div>
+
+                      <span class="text-xs text-left whitespace-normal">Enjoy one of the most popular tours in Cusco in a shared service!</span>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3 5 CUSCO CARD -->
+                <div class="relative overflow-hidden bg-[url('/img/home/scroll_gallery/5_scroll_cusco.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay lg:mx-0">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
+                    <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
+
+                    <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
+                      <div class="flex justify-between items-center">
+                        <div class="flex flex-col items-start">
+                          <del class="text-xs">$49 USD</del>
+                          <span>$35 USD</span>
+                        </div>
+                        <span>1 days</span>
+                      </div>
+
+                      <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
+                        <span>
+                          <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
+                            <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
+                            <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
+                          </svg>
+                        </span>
+                        <span class="text-left uppercase font-semibold whitespace-normal">atvs maras moray - group service</span>
+                      </div>
+
+                      <span class="text-xs text-left whitespace-normal">4-wheel adventure through the salt mines and moray in shared service!</span>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3 6 LIMA CARD -->
+                <div class="relative overflow-hidden bg-[url('/img/home/scroll_gallery/6_scroll_lima.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay lg:mx-0">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
+                    <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">lima</span>
+
+                    <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
+                      <div class="flex justify-between items-center">
+                        <div class="flex flex-col items-start">
+                          <del class="text-xs"></del>
+                          <span>$75 USD</span>
+                        </div>
+                        <span>1 days</span>
+                      </div>
+
+                      <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
+                        <span>
+                          <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
+                            <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
+                            <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
+                          </svg>
+                        </span>
+                        <span class="text-left uppercase font-semibold whitespace-normal">"street food" and old taverns in the historic center of lima</span>
+                      </div>
+
+                      <span class="text-xs text-left whitespace-normal">Get to know the main attractions of the historic center and spice it up with the best "street food" in the city!</span>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3 7 CUSCO CARD -->
+                <div class="relative overflow-hidden bg-[url('/img/home/scroll_gallery/7_scroll_cusco.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay lg:mx-0">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
+                    <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
+
+                    <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
+                      <div class="flex justify-between items-center">
+                        <div class="flex flex-col items-start">
+                          <del class="text-xs">$59 USD</del>
+                          <span>$39 USD</span>
+                        </div>
+                        <span>1 days</span>
+                      </div>
+
+                      <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
+                        <span>
+                          <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
+                            <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
+                            <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
+                          </svg>
+                        </span>
+                        <span class="text-left uppercase font-semibold whitespace-normal">humantay lake tour</span>
+                      </div>
+
+                      <span class="text-xs text-left whitespace-normal">Enjoy the colors of the most popular lake in Cusco on a shared experience!</span>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3 8 CUSCO CARD -->
+                <div class="relative overflow-hidden bg-[url('/img/home/scroll_gallery/8_scroll_cusco.jpeg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay lg:mx-0">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
+                    <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
+
+                    <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
+                      <div class="flex justify-between items-center">
+                        <div class="flex flex-col items-start">
+                          <del class="text-xs">$129 USD</del>
+                          <span>$89 USD</span>
+                        </div>
+                        <span>1 days</span>
+                      </div>
+
+                      <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
+                        <span>
+                          <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
+                            <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
+                            <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
+                          </svg>
+                        </span>
+                        <span class="text-left uppercase font-semibold whitespace-normal">picnic with llamas + chinchero, moray & salt mines of maras</span>
+                      </div>
+
+                      <span class="text-xs text-left whitespace-normal">Discover all that Moray and the salt mines have to offer with this fantastic picnic tour.</span>
+
+                    </div>
+                  </div>
                 </div>
               </div>
+
             </div>
 
-            <!-- 3 2 CUSCO CARD -->
-            <div class="relative snap-center md:snap-start overflow-hidden bg-[url('/img/home/scroll_gallery/2_scroll_cusco.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay mx-4 lg:mx-0">
-              <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-              <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-              <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
-                <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
-
-                <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
-                  <div class="flex justify-between items-center">
-                    <div class="flex flex-col items-start">
-                      <del class="text-xs">$339 USD</del>
-                      <span>$269 USD</span>
-                    </div>
-                    <span>1 days</span>
-                  </div>
-
-                  <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
-                    <span>
-                      <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
-                        <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
-                        <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
-                      </svg>
-                    </span>
-                    <span class="text-left uppercase font-semibold">tour to machu picchu by train full day - group service</span>
-                  </div>
-
-                  <span class="text-xs text-left">Unmissable destination to one of the 7 wonders of the world in shared service!</span>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- 3 3 HUACACHINA CARD -->
-            <div class="relative snap-center md:snap-start overflow-hidden bg-[url('/img/home/scroll_gallery/3_scroll_huacachina.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay mx-4 lg:mx-0">
-              <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-              <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-              <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
-                <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">huacachina</span>
-
-                <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
-                  <div class="flex justify-between items-center">
-                    <div class="flex flex-col items-start">
-                      <del class="text-xs">$139 USD</del>
-                      <span>$119 USD</span>
-                    </div>
-                    <span>1 days</span>
-                  </div>
-
-                  <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
-                    <span>
-                      <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
-                        <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
-                        <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
-                      </svg>
-                    </span>
-                    <span class="text-left uppercase font-semibold">tour to huacachina & paracas full day</span>
-                  </div>
-
-                  <span class="text-xs text-left">One of the best and most complete excursions to Huacachina & Paracas, where walking, tasting, adventure and nature are included.</span>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- 3 4 CUSCO CARD -->
-            <div class="relative snap-center md:snap-start overflow-hidden bg-[url('/img/home/scroll_gallery/4_scroll_cusco.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay mx-4 lg:mx-0">
-              <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-              <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-              <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
-                <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
-
-                <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
-                  <div class="flex justify-between items-center">
-                    <div class="flex flex-col items-start">
-                      <del class="text-xs">$59 USD</del>
-                      <span>$35 USD</span>
-                    </div>
-                    <span>1 days</span>
-                  </div>
-
-                  <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
-                    <span>
-                      <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
-                        <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
-                        <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
-                      </svg>
-                    </span>
-                    <span class="text-left uppercase font-semibold">rainbow mountain (vinicunca) and red valley tour</span>
-                  </div>
-
-                  <span class="text-xs text-left">Enjoy one of the most popular tours in Cusco in a shared service!</span>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- 3 5 CUSCO CARD -->
-            <div class="relative snap-center md:snap-start overflow-hidden bg-[url('/img/home/scroll_gallery/5_scroll_cusco.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay mx-4 lg:mx-0">
-              <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-              <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-              <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
-                <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
-
-                <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
-                  <div class="flex justify-between items-center">
-                    <div class="flex flex-col items-start">
-                      <del class="text-xs">$49 USD</del>
-                      <span>$35 USD</span>
-                    </div>
-                    <span>1 days</span>
-                  </div>
-
-                  <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
-                    <span>
-                      <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
-                        <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
-                        <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
-                      </svg>
-                    </span>
-                    <span class="text-left uppercase font-semibold">atvs maras moray - group service</span>
-                  </div>
-
-                  <span class="text-xs text-left">4-wheel adventure through the salt mines and moray in shared service!</span>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- 3 6 LIMA CARD -->
-            <div class="relative snap-center md:snap-start overflow-hidden bg-[url('/img/home/scroll_gallery/6_scroll_lima.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay mx-4 lg:mx-0">
-              <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-              <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-              <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
-                <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">lima</span>
-
-                <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
-                  <div class="flex justify-between items-center">
-                    <div class="flex flex-col items-start">
-                      <del class="text-xs"></del>
-                      <span>$75 USD</span>
-                    </div>
-                    <span>1 days</span>
-                  </div>
-
-                  <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
-                    <span>
-                      <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
-                        <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
-                        <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
-                      </svg>
-                    </span>
-                    <span class="text-left uppercase font-semibold">"street food" and old taverns in the historic center of lima</span>
-                  </div>
-
-                  <span class="text-xs text-left">Get to know the main attractions of the historic center and spice it up with the best "street food" in the city!</span>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- 3 7 CUSCO CARD -->
-            <div class="relative snap-center md:snap-start overflow-hidden bg-[url('/img/home/scroll_gallery/7_scroll_cusco.jpg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay mx-4 lg:mx-0">
-              <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-              <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-              <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
-                <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
-
-                <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
-                  <div class="flex justify-between items-center">
-                    <div class="flex flex-col items-start">
-                      <del class="text-xs">$59 USD</del>
-                      <span>$39 USD</span>
-                    </div>
-                    <span>1 days</span>
-                  </div>
-
-                  <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
-                    <span>
-                      <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
-                        <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
-                        <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
-                      </svg>
-                    </span>
-                    <span class="text-left uppercase font-semibold">humantay lake tour</span>
-                  </div>
-
-                  <span class="text-xs text-left">Enjoy the colors of the most popular lake in Cusco on a shared experience!</span>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- 3 8 CUSCO CARD -->
-            <div class="relative snap-start md:snap-start overflow-hidden bg-[url('/img/home/scroll_gallery/8_scroll_cusco.jpeg')] bg-cover aspect-[3/4] lg:aspect-square group/overlay mx-4 lg:mx-0">
-              <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-              <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-              <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50">
-                <span class="bg-orange-brand w-6/12 md:w-5/12 p-3 uppercase text-base lg:text-sm">cusco</span>
-
-                <div class="flex flex-col mb-3 lg:mb-6 px-3 lg:px-6 text-base/5 space-y-3">
-                  <div class="flex justify-between items-center">
-                    <div class="flex flex-col items-start">
-                      <del class="text-xs">$129 USD</del>
-                      <span>$89 USD</span>
-                    </div>
-                    <span>1 days</span>
-                  </div>
-
-                  <div class="flex justify-start items-center text-sm lg:text-base/4 gap-x-2">
-                    <span>
-                      <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 127" fill="none">
-                        <path d="M85.5492 13.477C73.2921 2.33251 58.6481 -2.02798 43.1966 0.873114C30.4908 3.25237 19.8039 10.0363 14.0432 15.5909C-7.63556 36.4911 -0.277689 70.9505 9.94258 84.3681C18.3682 95.4417 47.0639 123.984 48.2753 125.196L50.0968 127L51.9991 125.284C53.2464 124.161 82.7137 97.6176 90.3318 86.3051C105.236 64.1754 103.163 45.5482 98.8024 33.82C94.0736 21.1277 85.8722 13.76 85.5492 13.477ZM5.33045 52.5179C5.07023 43.1424 7.01737 29.7868 17.8119 19.3853C23.4021 13.9988 36.7809 5.28667 52.4208 5.28667C61.8425 5.28667 72.0807 8.45311 81.9241 17.4041C81.9421 17.4217 82.4176 17.8463 83.1893 18.6512C62.3988 20.3582 36.3771 27.9117 21.1947 52.6152C15.4251 62.0084 12.8678 71.1893 11.7372 77.2834C8.01338 70.5525 5.58169 61.345 5.33045 52.5179ZM50.2763 119.632C44.2464 113.591 24.8647 94.0266 16.2865 83.7312C16.5736 80.2641 18.108 67.7575 25.9145 55.1625C31.092 46.813 37.8576 40.1087 46.1577 35.0406C52.708 37.9771 78.4515 51.5981 83.9161 85.9601C75.9032 96.0255 56.4407 114.007 50.2763 119.632ZM88.1693 79.6803C81.5652 50.7666 61.663 37.0395 51.9273 31.9184C61.8784 27.1333 73.6959 24.3826 87.3438 23.7015C89.5153 26.7176 91.929 30.7509 93.7505 35.6597C99.0357 49.8645 97.1423 64.6618 88.1693 79.6803Z"></path>
-                        <path d="M59.3624 84.2142C60.5625 81.603 61.08 78.8326 60.99 75.8751C60.7275 67.4704 55.0422 60.8347 48.2393 61.0031C43.8515 61.1154 40.3713 63.5957 38.0387 68.3221C35.5786 73.3013 35.256 78.4863 37.5587 83.634C39.8538 88.7722 43.484 91.6455 48.2168 91.8982C51.9145 92.0948 55.6197 91.9544 59.3249 91.9076C59.655 91.9076 60.165 91.5987 60.2475 91.2899C60.33 90.9717 60.09 90.354 59.835 90.0732C58.4699 88.5663 57.0448 87.1344 55.6572 85.6462C55.2297 85.1876 54.8622 84.6261 54.3896 84.0083C52.9646 86.0112 51.0895 86.9846 48.8843 86.8723C46.7317 86.7693 44.8116 85.7772 43.1765 84.0364C40.3338 80.9946 39.6663 75.6318 41.5789 71.4856C43.649 66.9931 47.5643 65.0651 51.3745 66.703C53.2571 67.5079 54.7347 69.0054 55.7697 71.1299C57.4048 74.4806 57.3148 77.9435 56.0847 81.2005C57.2398 82.2769 58.2824 83.2315 59.3624 84.2142Z"></path>
-                      </svg>
-                    </span>
-                    <span class="text-left uppercase font-semibold">picnic with llamas + chinchero, moray & salt mines of maras</span>
-                  </div>
-
-                  <span class="text-xs text-left">Discover all that Moray and the salt mines have to offer with this fantastic picnic tour.</span>
-
-                </div>
-              </div>
+            <div class="glide__arrows hidden lg:block" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">back</button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
             </div>
 
           </section>
@@ -883,9 +897,7 @@
 
                 </div>
 
-                <button class="bg-orange-brand uppercase w-full text-zinc-50 font-medium py-3 px-5 rounded-xl hover:bg-zinc-700 transition-all duration-300">
-                  <a class="text-base" href="cusco_all_tours.html">more info</a>
-                </button>
+                <a href="cusco_all_tours.html" class="bg-orange-brand uppercase w-full text-zinc-50 font-medium py-3 px-5 rounded-xl hover:bg-zinc-700 transition-all duration-300 text-base inline-block text-center">more info</a>
               </div>
             </a>
 
@@ -923,9 +935,7 @@
 
                 </div>
 
-                <button class="bg-orange-brand uppercase w-full text-zinc-50 font-medium py-3 px-5 rounded-xl hover:bg-zinc-700 transition-all duration-300">
-                  <a class="text-base" href="cusco_all_tours.html">more info</a>
-                </button>
+                <a href="cusco_all_tours.html" class="bg-orange-brand uppercase w-full text-zinc-50 font-medium py-3 px-5 rounded-xl hover:bg-zinc-700 transition-all duration-300 text-base inline-block text-center">more info</a>
               </div>
             </a>
 
@@ -963,9 +973,7 @@
 
                 </div>
 
-                <button class="bg-orange-brand uppercase w-full text-zinc-50 font-medium py-3 px-5 rounded-xl hover:bg-zinc-700 transition-all duration-300">
-                  <a class="text-base" href="cusco_all_tours.html">more info</a>
-                </button>
+                <a href="cusco_all_tours.html" class="bg-orange-brand uppercase w-full text-zinc-50 font-medium py-3 px-5 rounded-xl hover:bg-zinc-700 transition-all duration-300 text-base inline-block text-center">more info</a>
               </div>
             </a>
 
@@ -1003,9 +1011,7 @@
 
                 </div>
 
-                <button class="bg-orange-brand uppercase w-full text-zinc-50 font-medium py-3 px-5 rounded-xl hover:bg-zinc-700 transition-all duration-300">
-                  <a class="text-base" href="cusco_all_tours.html">more info</a>
-                </button>
+                <a href="cusco_all_tours.html" class="bg-orange-brand uppercase w-full text-zinc-50 font-medium py-3 px-5 rounded-xl hover:bg-zinc-700 transition-all duration-300 text-base inline-block text-center">more info</a>
               </div>
             </a>
 
@@ -1337,6 +1343,29 @@
       </footer>
 
     </div>
+
+    <script>
+      new Glide (".glide", {
+        autoplay: 5000,
+        hoverpause: true,
+        perView: 4,
+        keyboard: true,
+        gap: 0,
+        type: 'carousel',
+        breakpoints: {
+          768: {
+            perView: 1,
+          },
+          1024 :{
+            perView: 2
+          },
+          1280 :{
+            perView: 3
+          }
+
+        }
+      }).mount();
+    </script>
 
   </body>
 </html>

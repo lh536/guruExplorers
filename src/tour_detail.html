@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="./js/glide.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/glide.core.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/glide.theme.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body class="antialiased text-gray-brand font-raleway lg:text-base xl:text-lg 2xl:text-xl">
@@ -386,27 +389,36 @@
       <!-- 3 MAIN -->
       <main>
 
-        <div class="grid grid-flow-col auto-cols-[90%] md:auto-cols-[48%] lg:auto-cols-[32%] xl:auto-cols-[24%] overflow-x-auto snap-x snap-mandatory">
-          <div class="aspect-square snap-end md:snap-end">
-            <img class="object-cover w-full h-full" src="img/tours/detail/hero1.jpeg" alt="Photo Hero 1">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide aspect-square">
+                <img class="object-cover w-full h-full" src="img/tours/detail/hero1.jpeg" alt="Photo Hero 1">
+              </li>
+              <li class="glide__slide aspect-square">
+                <img class="object-cover w-full h-full" src="img/tours/detail/hero2.jpg" alt="Photo Hero 2">
+              </li>
+              <li class="glide__slide aspect-square">
+                <img class="object-cover w-full h-full" src="img/tours/detail/hero3.png" alt="Photo Hero 3">
+              </li>
+              <li class="glide__slide aspect-square">
+                <img class="object-cover w-full h-full" src="img/tours/detail/hero4.jpg" alt="Photo Hero 4">
+              </li>
+              <li class="glide__slide aspect-square">
+                <img class="object-cover w-full h-full" src="img/tours/detail/hero5.jpg" alt="Photo Hero 5">
+              </li>
+              <li class="glide__slide aspect-square">
+                <img class="object-cover w-full h-full" src="img/tours/detail/hero6.jpg" alt="Photo Hero 6">
+              </li>
+              <li class="glide__slide aspect-square">
+                <img class="object-cover w-full h-full" src="img/tours/detail/hero7.jpg" alt="Photo Hero 7">
+              </li>
+            </ul>
           </div>
-          <div class="aspect-square snap-center md:snap-start">
-            <img class="object-cover w-full h-full" src="img/tours/detail/hero2.jpg" alt="Photo Hero 2">
-          </div>
-          <div class="aspect-square snap-center md:snap-start">
-            <img class="object-cover w-full h-full" src="img/tours/detail/hero3.png" alt="Photo Hero 3">
-          </div>
-          <div class="aspect-square snap-center md:snap-start">
-            <img class="object-cover w-full h-full" src="img/tours/detail/hero4.jpg" alt="Photo Hero 4">
-          </div>
-          <div class="aspect-square snap-center md:snap-start">
-            <img class="object-cover w-full h-full" src="img/tours/detail/hero5.jpg" alt="Photo Hero 5">
-          </div>
-          <div class="aspect-square snap-center md:snap-start">
-            <img class="object-cover w-full h-full" src="img/tours/detail/hero6.jpg" alt="Photo Hero 6">
-          </div>
-          <div class="aspect-square snap-start md:snap-start">
-            <img class="object-cover w-full h-full" src="img/tours/detail/hero7.jpg" alt="Photo Hero 7">
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">back</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
           </div>
         </div>
 
@@ -951,112 +963,171 @@
           </section>
 
           <!-- 3 MOST POPULAR GROUP TOURS GALLERY -->
-          <div class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes1.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
-            <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-
-            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
-              <div class="flex h-full flex-col justify-between">
-                <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
-                  <div class="flex flex-col text-xs text-left">
-                    <h6 class="uppercase font-semibold pb-3">palccoyo mountains tour - alternative to the traditional rainbow mountain (vinicunca)</h6>
-                    <span class="capitalize">from:</span>
-
-                    <div class="flex justify-between items-center">
-                      <div class="">
-                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">79</span>/person</p>
-                        <p class="capitalize">before: <span class="lining-nums uppercase">us$109</span></p>
-                      </div>
-
-                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
-
+          <div class="glide_tours md:col-span-2 lg:col-span-4">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes1.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl glide__slide">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+                    <div class="flex h-full flex-col justify-between">
+                      <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
+                        <div class="flex flex-col text-xs text-left">
+                          <h6 class="uppercase font-semibold pb-3">palccoyo mountains tour - alternative to the traditional rainbow mountain (vinicunca)</h6>
+                          <span class="capitalize">from:</span>
+                          <div class="flex justify-between items-center">
+                            <div class="">
+                              <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">79</span>/person</p>
+                              <p class="capitalize">before: <span class="lining-nums uppercase">us$109</span></p>
+                            </div>
+                            <a href="tour_detail.html" class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase z-10">book now</a>
+                          </div>
+                        </div>
                     </div>
-
                   </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes2.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
-            <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-
-            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
-              <div class="flex h-full flex-col justify-between">
-                <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
-                  <div class="flex flex-col text-xs text-left">
-                    <h6 class="uppercase font-semibold pb-3">full day tour waqrapukara</h6>
-                    <span class="capitalize">from:</span>
-
-                    <div class="flex justify-between items-center">
-                      <div class="">
-                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">45</span>/person</p>
-                        <p class="capitalize">before: <span class="lining-nums uppercase">us$62</span></p>
-                      </div>
-
-                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
-
+                </li>
+                <li class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes2.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl glide__slide">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+                    <div class="flex h-full flex-col justify-between">
+                      <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                        <div class="flex flex-col text-xs text-left">
+                          <h6 class="uppercase font-semibold pb-3">full day tour waqrapukara</h6>
+                          <span class="capitalize">from:</span>
+                          <div class="flex justify-between items-center">
+                            <div class="">
+                              <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">45</span>/person</p>
+                              <p class="capitalize">before: <span class="lining-nums uppercase">us$62</span></p>
+                            </div>
+                            <a href="tour_detail.html" class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase z-10">book now</a>
+                          </div>
+                        </div>
                     </div>
-
                   </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes3.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
-            <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-
-            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
-              <div class="flex h-full flex-col justify-between">
-                <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
-                  <div class="flex flex-col text-xs text-left">
-                    <h6 class="uppercase font-semibold pb-3">full day tour humantay lake</h6>
-                    <span class="capitalize">from:</span>
-
-                    <div class="flex justify-between items-center">
-                      <div class="">
-                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">79</span>/person</p>
-                        <p class="capitalize">before: <span class="lining-nums uppercase">us$109</span></p>
-                      </div>
-
-                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
-
+                </li>
+                <li class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes3.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl glide__slide">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+                    <div class="flex h-full flex-col justify-between">
+                      <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
+                        <div class="flex flex-col text-xs text-left">
+                          <h6 class="uppercase font-semibold pb-3">full day tour humantay lake</h6>
+                          <span class="capitalize">from:</span>
+                          <div class="flex justify-between items-center">
+                            <div class="">
+                              <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">79</span>/person</p>
+                              <p class="capitalize">before: <span class="lining-nums uppercase">us$109</span></p>
+                            </div>
+                            <a href="tour_detail.html" class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase z-10">book now</a>
+                          </div>
+                        </div>
                     </div>
-
                   </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes4.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl">
-            <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
-            <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
-
-            <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
-              <div class="flex h-full flex-col justify-between">
-                <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
-                  <div class="flex flex-col text-xs text-left">
-                    <h6 class="uppercase font-semibold pb-3">full day tour to the "7 lakes of ausangate"</h6>
-                    <span class="capitalize">from:</span>
-
-                    <div class="flex justify-between items-center">
-                      <div class="">
-                        <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">89</span>/person</p>
-                        <p class="capitalize">before: <span class="lining-nums uppercase">us$99</span></p>
-                      </div>
-
-                      <button class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase">book now</button>
-
+                </li>
+                <li class="relative overflow-hidden bg-[url('/img/tours/cusco_all/cusco_hikes4.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl glide__slide">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+                    <div class="flex h-full flex-col justify-between">
+                      <span class="bg-[#e2d02b] w-fit py-1.5 px-3 uppercase text-xs rounded-full">private service</span>
+                        <div class="flex flex-col text-xs text-left">
+                          <h6 class="uppercase font-semibold pb-3">full day tour to the "7 lakes of ausangate"</h6>
+                          <span class="capitalize">from:</span>
+                          <div class="flex justify-between items-center">
+                            <div class="">
+                              <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">89</span>/person</p>
+                              <p class="capitalize">before: <span class="lining-nums uppercase">us$99</span></p>
+                            </div>
+                            <a href="tour_detail.html" class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase z-10">book now</a>
+                          </div>
+                        </div>
                     </div>
-
                   </div>
-              </div>
+                </li>
+                <li class="relative overflow-hidden bg-[url('/img/tours/destinations/book_photo1.gif')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl glide__slide">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+                    <div class="flex h-full flex-col justify-between">
+                      <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                        <div class="flex flex-col text-xs text-left">
+                          <h6 class="uppercase font-semibold pb-3">atvs tour to the abode of the gods</h6>
+                          <span class="capitalize">from:</span>
+                          <div class="flex justify-between items-center">
+                            <div class="">
+                              <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">27</span>/person</p>
+                              <p class="capitalize">before: <span class="lining-nums uppercase">us$34</span></p>
+                            </div>
+                            <a href="tour_detail.html" class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase z-10">book now</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="relative overflow-hidden bg-[url('/img/tours/destinations/book_photo2.png')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl glide__slide">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+                    <div class="flex h-full flex-col justify-between">
+                      <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                        <div class="flex flex-col text-xs text-left">
+                          <h6 class="uppercase font-semibold pb-3">tour huacachina + paracas + nazca lines 2d/1n</h6>
+                          <span class="capitalize">from:</span>
+                          <div class="flex justify-between items-center">
+                            <div class="">
+                              <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">440</span>/person</p>
+                              <p class="capitalize">before: <span class="lining-nums uppercase">us$490</span></p>
+                            </div>
+                            <a href="tour_detail.html" class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase z-10">book now</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="relative overflow-hidden bg-[url('/img/tours/destinations/book_photo3.png')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl glide__slide">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+                    <div class="flex h-full flex-col justify-between">
+                      <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                        <div class="flex flex-col text-xs text-left">
+                          <h6 class="uppercase font-semibold pb-3">south valley tour</h6>
+                          <span class="capitalize">from:</span>
+                          <div class="flex justify-between items-center">
+                            <div class="">
+                              <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">20</span>/person</p>
+                              <p class="capitalize">before: <span class="lining-nums uppercase">us$28</span></p>
+                            </div>
+                            <a href="tour_detail.html" class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase z-10">book now</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="relative overflow-hidden bg-[url('/img/tours/destinations/book_photo4.jpg')] bg-cover bg-center aspect-[3/4] lg:aspect-[4/3] group/overlay rounded-xl glide__slide">
+                  <a href="tour_detail.html" class="absolute inset-0 z-10"></a>
+                  <div class="h-full w-full bg-gradient-to-b from-zinc-900/5 via-zinc-900/20 via-60% to-zinc-900/95 to-85% transition-all duration-500 group-hover/overlay:bg-black/50 group-hover/overlay:transition-all group-hover/overlay:duration-500"></div>
+                  <div class="absolute top-0 inset-0 flex flex-col justify-between text-zinc-50 p-4">
+                    <div class="flex h-full flex-col justify-between">
+                      <span class="bg-[#fab450] w-fit py-1.5 px-3 uppercase text-xs rounded-full">shared service</span>
+                        <div class="flex flex-col text-xs text-left">
+                          <h6 class="uppercase font-semibold pb-3">colca canyon full day tour</h6>
+                          <span class="capitalize">from:</span>
+                          <div class="flex justify-between items-center">
+                            <div class="">
+                              <p class="uppercase">us$ <span class="text-xl font-semibold lining-nums">34</span>/person</p>
+                              <p class="capitalize">before: <span class="lining-nums uppercase">us$50</span></p>
+                            </div>
+                            <a href="tour_detail.html" class="bg-orange-brand hover:bg-zinc-700 py-2 px-4 rounded-xl transition-all duration-300 uppercase z-10">book now</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-
           </div>
 
         </article>
@@ -1225,6 +1296,50 @@
       </footer>
 
     </div>
+
+    <script>
+      new Glide (".glide", {
+        autoplay: 5000,
+        hoverpause: true,
+        perView: 4,
+        keyboard: true,
+        gap: 0,
+        type: 'carousel',
+        breakpoints: {
+          768: {
+            perView: 1,
+          },
+          1024 :{
+            perView: 2
+          },
+          1280 :{
+            perView: 3
+          }
+
+        }
+      }).mount();
+
+      new Glide (".glide_tours", {
+        autoplay: 5000,
+        hoverpause: true,
+        perView: 4,
+        keyboard: true,
+        gap: 20,
+        type: 'carousel',
+        breakpoints: {
+          768: {
+            perView: 1,
+          },
+          1024 :{
+            perView: 2
+          },
+          1280 :{
+            perView: 3
+          }
+
+        }
+      }).mount();
+    </script>
 
   </body>
 </html>
