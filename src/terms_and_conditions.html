@@ -177,7 +177,7 @@
           </nav>
 
           <!-- 4 NETWORK ICONS -->
-          <div class="flex gap-x-1.5">
+          <div class="flex gap-x-1.5 md:gap-x-3">
 
             <!-- 4 FACEBOOK -->
             <a href="https://www.facebook.com/guruexplorers/" target="_blank">
@@ -284,8 +284,12 @@
           <!-- 4 MOBILE MENU -->
           <div x-data="{ openMain: false }" @click.away="openMain = false" class="z-10 pr-2 lg:hidden">
             <button @click="openMain = !openMain" class="flex">
-              <svg class="h-8 w-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg :class=" openMain ? 'hidden' : ''" class="h-8 w-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M4 18q-.425 0-.713-.288T3 17q0-.425.288-.713T4 16h16q.425 0 .713.288T21 17q0 .425-.288.713T20 18H4Zm0-5q-.425 0-.713-.288T3 12q0-.425.288-.713T4 11h16q.425 0 .713.288T21 12q0 .425-.288.713T20 13H4Zm0-5q-.425 0-.713-.288T3 7q0-.425.288-.713T4 6h16q.425 0 .713.288T21 7q0 .425-.288.713T20 8H4Z"/>
+              </svg>
+
+              <svg :class=" openMain ? '' : 'hidden' " class="h-8 w-8 fill-none stroke-2 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
 
             </button>
