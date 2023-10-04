@@ -22,7 +22,7 @@ new Glide (".glide", {
     }
   }).mount();
 
-  new Glide (".glide_tours", {
+  new Glide (".glide-tours", {
     autoplay: 5000,
     hoverpause: true,
     perView: 4,

@@ -38,7 +38,7 @@
 @layer components {
 
     .navbar-option {
-        @apply hover:text-orange-brand transition-all duration-300 inline-block w-full;
+        @apply hover:text-orange-brand group-hover/submenu:text-orange-brand transition-all duration-300 inline-block w-full;
     }
 
     .navbar-submenu-container {
